@@ -1,7 +1,7 @@
 ## Why master Chrome DevTools ?
 
 - Become a web performance expert!
-- Be the one your team to fix complicated bugs 
+- Be the one your team to fix complicated bugs
 - Prototype quickly with live editing
 
 ## Google Performance Studies
@@ -12,46 +12,79 @@
 
 ## Speed Update
 
-in recent google changes having hight speed can boost you website ranking 
+in recent google changes having hight speed can boost you website ranking
 
 ![](./images/speed_in_search_algo.png)
 
-## How do we measure performance ? 
+## How do we measure performance ?
 
 ![](./images/core_web_vitals.png)
 
-### LCP 
+### LCP
 
-Largest Content Paint : they monitor how your website load and find the largest paint on your 
+Largest Content Paint : they monitor how your website load and find the largest paint on your
 content. It find the biggest block that kind of have some content and see how long that takes to painting.
 
-### INP 
+### INP
 
 Interaction Next Pain : if some body interact click button add card and etc search or what ever how long dose it  
 takes pain like if I open card show spinner and take 7s and then go into next page that 7s will count as INP.
 
-### CLS 
+### CLS
 
-Cumulative Layout Shift : how stable you UI do things and moving things around. poor load can cause by all of sudden a 
-image load and change entire page or ads comes form third party library. 
+Cumulative Layout Shift : how stable you UI do things and moving things around. poor load can cause by all of sudden a
+image load and change entire page or ads comes form third party library.
 
-## RAIL 
+## RAIL
 
 ![](./images/RAIL.png)
 
-### Response 
+### Response
 
 if you click some or what ever how you app response to that is it fast or slow .
 
-### Animation 
+### Animation
 
 what is animated and how smooth is it how fast is it.
 
-### Idle 
+### Idle
 
 when do open operation you app show be Idle not friz and wait to that to finish.
 
-### Load 
+### Load
 
 how dose it takes to page to load or action to load and stuff like that.
 
+## What can Chrome DevTools Do ?
+
+> Chrome extensions often mess with the DevTools data, leading to inaccurate reporting. if you're going to run any important
+> audits , make sure you have all of your extensions disabled or use an incognito tab!
+
+basic of element tab and styles and computed nothing special
+
+### Element
+
+a full structure of you html you can edit fully and change what ever you want in html
+
+#### Styles
+
+here you can see all the styles coming and also in **:hov** section simulate different types of actions
+like hover and etc
+
+##### **:cls**
+
+This one is used for adding class
+
+##### **brush**
+
+![](./images/brush_icon.png)
+
+by clicking this you can set what if user preference was dark or light and see the change based on that
+
+#### Computed
+
+This section show the box mode of the selected element and all styles attach to that
+
+#### Event Listeners 
+
+to see the event are running on that exact element
