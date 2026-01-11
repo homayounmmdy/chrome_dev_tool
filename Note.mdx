@@ -162,17 +162,17 @@ at that time people used is put the value in the alert to see
 - Edit the styles
 - Edit html tags
 - Edit html Properties
-- adding multiply css rules 
-- scroll into view where if you select code and right click and click scroll on view move your scroll into that section 
+- adding multiply css rules
+- scroll into view where if you select code and right click and click scroll on view move your scroll into that section
 - Delete and hide and show elements or duplicated
-- simulate many state like hover , active and etc ... 
+- simulate many state like hover , active and etc ...
 - simulate color scheme preference
 - in computed tab see box Model and all styles apply to selected element
-- HTML breakpoint click on element and active this and will show which js case to change that html 
+- HTML breakpoint click on element and active this and will show which js case to change that html
 - finding event listers in separate tab
 - Accessibility for color contrast and font size
 
-## Network optimization 
+## Network optimization
 
 ![](./images/tipical_loading.png)
 
@@ -186,12 +186,12 @@ at that time people used is put the value in the alert to see
 
 ## Gzip vs Brotli
 
-two type of comparison for file that helps to load the size faster rather reduce the code or change any line of 
+two type of comparison for file that helps to load the size faster rather reduce the code or change any line of
 code in total for fullstack app this way this recommended.
 
 ![](./images/gzip_brotli.png)
 
-## Preload vs Prefetch 
+## Preload vs Prefetch
 
 ![](./images/preload_prefetch.png)
 
@@ -201,3 +201,46 @@ you do file or entire page.
 ## HTTP/2 vs HTTP/3
 
 ![](./images/HTTP_2_3.png)
+
+## Lighthouse web audits
+
+### Performance
+
+- Page load speed and responsiveness.
+- Resources usage (e.g., javascript, images,fonts).
+- Metrics:
+  - First Contentful Paint (FCP): Time to first visible content.
+  - Large Contentful Paint (LCP): Time to load the largest visible element.
+  - Cumulative Layout Shift (CLS) : Visual stability during loading.
+  - Time to Interactive (TTI) : Time until the page is fully usable.
+  - Total Blocking Time (TBT) : Delays caused by scripts.
+
+### Accessibility
+
+- Compatibility with assistive technologies (e.g , screen readers).
+- Semantic HTML structure and correct use of ARIA roles.
+- Key focus areas:
+  - Text contrast ratio.
+  - Keyboard navigation support.
+  - Alt attributes on image.
+  - Labels on forms and interactive elements.
+
+### Best Practices
+
+- Code quality and security practices.
+- Key areas:
+  - Secure HTTPS connections.
+  - Avoiding deprecated APIs.
+  - No inline style or Javascript (avoid XSS risks).
+  - Efficient use of browser features (e.g, modern image formats like WebP)
+
+### SEO
+
+- Basic search engine optimization for discoverability.
+- Key areas:
+  - Meta tags.
+  - Page can be crawled by SEO bots.
+  - Mobile-friendliness.
+  - Correct use of HTTP status codes.
+
+
