@@ -249,7 +249,6 @@ you do file or entire page.
 
 ![](./images/debuging_tools.png)
 
-
 ### Core Concepts
 
 - Stop / Start
@@ -261,7 +260,7 @@ you do file or entire page.
 ![](./images/debugin_sidebar.png)
 
 - **Watch :** that you can add value into that section and see the access section of it.
-- **Call Stack :** It will show how you get there 
+- **Call Stack :** It will show how you get there
 - **Scope :** It show that where your this is referring
 - **Breakpoint :** where you can set by editor or in your code write debugger to stop that area
 
@@ -269,8 +268,8 @@ you do file or entire page.
 
 ## Performance Profiling
 
-red in the performance mean page junge which is mean the css are too heavy in which refresh browser want more 
-and more and the thread is too busy and it drop the frame. 
+red in the performance mean page junge which is mean the css are too heavy in which refresh browser want more
+and more and the thread is too busy and it drop the frame.
 
 > The problem for lack in games is that the Thread is too busy and monitor ask for paint and thread can't provide that.
 
@@ -279,10 +278,10 @@ aren't smooth. They perceive animations as smooth so long as 60 new frames are r
 second. That's 16 ms per frame, including the time it takes for the browser to pain the new frame
 the screen , leaving an app about 10 ms to produce a frame.
 
-**60 to 100ms** Respond to user actions within this time window users fell like the result is 
+**60 to 100ms** Respond to user actions within this time window users fell like the result is
 immediate. Any longer , and connection between action and reaction is broken.
 
-**100 to 1000ms** Within this window, things feel part of a natural and continuous progression of 
+**100 to 1000ms** Within this window, things feel part of a natural and continuous progression of
 tasks. For most users on the web, loading pages or changing views represents a task.
 
 **1000 ms more** Beyond 1000 milliseconds (1 second), users lose focus on the task they are performing.
@@ -293,4 +292,14 @@ abandon tasks. They may or may not come back later.
 ![](./images/performance_ideal_time.png)
 
 ## Javascript Bytes are not same as JPEG bytes
+
 ![](./images/javascript_bytes_JPEG.png)
+
+## Page Jank
+
+Most devices today refresh their screens 60 times a second. The browser needs to match the device's
+refresh rate and put up 1 new picture , or frame , for each of those screen refreshes.
+
+Each of those frames has a budget of just over 16ms (1second / 60 = 16.66ms). In reality, however,
+the browser has housekeeping work to do , so all of your work needs to be complicated inside 10ms.
+
