@@ -267,4 +267,30 @@ you do file or entire page.
 
 > by right clicking on the line also you can add condition breakpoint that stop when condition hit.
 
+## Performance Profiling
 
+red in the performance mean page junge which is mean the css are too heavy in which refresh browser want more 
+and more and the thread is too busy and it drop the frame. 
+
+> The problem for lack in games is that the Thread is too busy and monitor ask for paint and thread can't provide that.
+
+**0 to 16ms** Users are exceptionally good at tracking motion, and they dislike it when animations
+aren't smooth. They perceive animations as smooth so long as 60 new frames are rendered every
+second. That's 16 ms per frame, including the time it takes for the browser to pain the new frame
+the screen , leaving an app about 10 ms to produce a frame.
+
+**60 to 100ms** Respond to user actions within this time window users fell like the result is 
+immediate. Any longer , and connection between action and reaction is broken.
+
+**100 to 1000ms** Within this window, things feel part of a natural and continuous progression of 
+tasks. For most users on the web, loading pages or changing views represents a task.
+
+**1000 ms more** Beyond 1000 milliseconds (1 second), users lose focus on the task they are performing.
+
+**10000 ms or more** Beyond 10000 milliseconds (10 second), users are frustrated and are likely to
+abandon tasks. They may or may not come back later.
+
+![](./images/performance_ideal_time.png)
+
+## Javascript Bytes are not same as JPEG bytes
+![](./images/javascript_bytes_JPEG.png)
