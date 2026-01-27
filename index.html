@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Chrome DevTools</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">
+                <i class="fas fa-tools"></i> Chrome DevTools Mastery
+            </h1>
+            <nav class="nav">
+                <a href="#why" class="nav-link">Why Learn</a>
+                <a href="#performance" class="nav-link">Performance</a>
+                <a href="#tools" class="nav-link">DevTools</a>
+                <a href="#optimization" class="nav-link">Optimization</a>
+                <a href="#memory" class="nav-link">Memory</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <h2>Master Chrome DevTools for Web Development Excellence</h2>
+                <p class="subtitle">Become a performance expert, debug like a pro, and build faster web experiences</p>
+            </div>
+        </section>
+
+        <div class="container content-container">
+            <!-- Why Master Chrome DevTools -->
+            <section id="why" class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-question-circle"></i> Why Master Chrome DevTools?
+                </h2>
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Become a web performance expert!</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-bug"></i>
+                        <span>Be the one your team counts on to fix complicated bugs</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Prototype quickly with live editing</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Google Performance Studies -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-chart-bar"></i> Google Performance Studies
+                </h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="./images/performance_case_study.png" alt="Google Performance Case Study">
+                        <p class="image-caption">Performance Case Study</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/performance_case_study_2.png" alt="Google Performance Case Study 2">
+                        <p class="image-caption">Performance Case Study 2</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Speed Update -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-tachometer-alt"></i> Speed Update
+                </h2>
+                <p>In recent Google changes, having high speed can boost your website ranking.</p>
+                <div class="image-center">
+                    <img src="./images/speed_in_search_algo.png" alt="Speed in Search Algorithm">
+                </div>
+            </section>
+
+            <!-- How do we measure performance? -->
+            <section id="performance" class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-ruler"></i> How do we measure performance?
+                </h2>
+                <div class="image-center">
+                    <img src="./images/core_web_vitals.png" alt="Core Web Vitals">
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-paint-brush"></i> LCP - Largest Contentful Paint</h3>
+                        <p>Monitors how your website loads and finds the largest paint on your content. It finds the biggest block that has some content and measures how long it takes to paint.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-mouse-pointer"></i> INP - Interaction to Next Paint</h3>
+                        <p>If somebody interacts (clicks a button, adds a card, searches, etc.) how long does it take to paint? For example, if opening a card shows a spinner for 7s before going to the next page, that 7s counts as INP.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-arrows-alt"></i> CLS - Cumulative Layout Shift</h3>
+                        <p>Measures how stable your UI is. Poor load can be caused by sudden image loading changing the entire page or ads coming from third-party libraries.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RAIL -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-train"></i> RAIL Model
+                </h2>
+                <div class="image-center">
+                    <img src="./images/RAIL.png" alt="RAIL Model">
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-reply"></i> Response</h3>
+                        <p>If you click something, how does your app respond? Is it fast or slow?</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-film"></i> Animation</h3>
+                        <p>What is animated and how smooth is it? How fast does it run?</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-pause"></i> Idle</h3>
+                        <p>When doing operations, your app should be idle, not frozen, waiting to finish.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-truck-loading"></i> Load</h3>
+                        <p>How long does it take for the page or action to load?</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- What can Chrome DevTools Do? -->
+            <section id="tools" class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-toolbox"></i> What can Chrome DevTools Do?
+                </h2>
+                
+                <div class="warning-note">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p><strong>Note:</strong> Chrome extensions often mess with DevTools data, leading to inaccurate reporting. If you're going to run any important audits, make sure you have all extensions disabled or use an incognito tab!</p>
+                </div>
+                
+                <p>The basics of the Elements tab, Styles, and Computed are straightforward.</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-code"></i> Elements</h3>
+                        <p>The full structure of your HTML. You can edit and change whatever you want.</p>
+                        <ul class="nested-list">
+                            <li><strong>Styles:</strong> See all styles applied. Use <strong>:hov</strong> to simulate different actions like hover.</li>
+                            <li><strong>:cls:</strong> Used for adding classes.</li>
+                            <li><strong>Brush icon:</strong> Set user preference for dark or light mode.</li>
+                            <li><strong>Computed:</strong> Shows the box model and all styles attached to the selected element.</li>
+                            <li><strong>Event Listeners:</strong> See events running on that exact element.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-network-wired"></i> Network</h3>
+                        <p>Monitor network requests and analyze loading performance.</p>
+                        <ul class="nested-list">
+                            <li><strong>Files:</strong> See where files come from with detailed info on each.</li>
+                            <li><strong>Top bar:</strong> Customize internet connection, disable caching, etc.</li>
+                            <li><strong>Bottom info:</strong> Amount of requests, transferred data, load times, etc.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-chart-line"></i> Performance</h3>
+                        <p>Focus on what the main thread is doing. For 3D or heavy animation, GPU matters.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-terminal"></i> Console</h3>
+                        <p>Write math, code, and execute operations on the page directly.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-file-code"></i> Sources</h3>
+                        <p>A full IDE environment. Note: Modern projects with bundlers may have less readable code.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-layer-group"></i> Application</h3>
+                        <p>Access cookies, local storage, session storage, and other stored data.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-memory"></i> Memory</h3>
+                        <p>Used for C, C++, and assembly to see memory usage. Also for detecting JavaScript memory leaks.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-search"></i> Lighthouse</h3>
+                        <p>Simulate audits for Performance, Accessibility, Best Practices, and SEO for Mobile and Desktop.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Before Chrome DevTools -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-history"></i> Before Chrome DevTools
+                </h2>
+                <p>Before DevTools, you'd open the page source and debug that way. Another method was putting values in alerts to see them.</p>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="./images/page_source.png" alt="Page Source Debugging">
+                        <p class="image-caption">Debugging via Page Source</p>
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/dev_tools_history.png" alt="DevTools History">
+                        <p class="image-caption">Evolution of DevTools</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Network Optimization -->
+            <section id="optimization" class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-rocket"></i> Network Optimization
+                </h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="./images/tipical_loading.png" alt="Typical Loading">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/network_packed.png" alt="Network Packed">
+                    </div>
+                    <div class="image-item">
+                        <img src="./images/browser_tree.png" alt="Browser Tree">
+                    </div>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-database"></i> Browser Caching</h3>
+                        <div class="image-center">
+                            <img src="./images/browser_caching.png" alt="Browser Caching">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-compress-arrows-alt"></i> Gzip vs Brotli</h3>
+                        <p>Two compression methods that help load files faster without changing code.</p>
+                        <div class="image-center">
+                            <img src="./images/gzip_brotli.png" alt="Gzip vs Brotli">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-forward"></i> Preload vs Prefetch</h3>
+                        <p>Browser APIs that tell which files have priority.</p>
+                        <div class="image-center">
+                            <img src="./images/preload_prefetch.png" alt="Preload vs Prefetch">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-exchange-alt"></i> HTTP/2 vs HTTP/3</h3>
+                        <div class="image-center">
+                            <img src="./images/HTTP_2_3.png" alt="HTTP/2 vs HTTP/3">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lighthouse Web Audits -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-search"></i> Lighthouse Web Audits
+                </h2>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-tachometer-alt"></i> Performance</h3>
+                        <ul class="nested-list">
+                            <li>Page load speed and responsiveness</li>
+                            <li>Resource usage (JavaScript, images, fonts)</li>
+                            <li>Metrics: FCP, LCP, CLS, TTI, TBT</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-universal-access"></i> Accessibility</h3>
+                        <ul class="nested-list">
+                            <li>Compatibility with assistive technologies</li>
+                            <li>Semantic HTML and ARIA roles</li>
+                            <li>Text contrast, keyboard navigation, alt attributes</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-check-circle"></i> Best Practices</h3>
+                        <ul class="nested-list">
+                            <li>Secure HTTPS connections</li>
+                            <li>Avoiding deprecated APIs</li>
+                            <li>No inline styles/JavaScript (XSS risks)</li>
+                            <li>Efficient browser feature usage</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-search"></i> SEO</h3>
+                        <ul class="nested-list">
+                            <li>Meta tags optimization</li>
+                            <li>Page crawlability by SEO bots</li>
+                            <li>Mobile-friendliness</li>
+                            <li>Correct HTTP status codes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="tip-note">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Tip:</strong> In DevTools, click Escape to open the console, then click the menu and add "Coverage" to see better insights.</p>
+                </div>
+            </section>
+
+            <!-- Memory Leaks -->
+            <section id="memory" class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-brain"></i> Memory Management & Leaks
+                </h2>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-globe"></i> Global Variables</h3>
+                        <div class="image-center">
+                            <img src="./images/global_variables.png" alt="Global Variables Memory Leak">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-code-branch"></i> Closures</h3>
+                        <div class="image-center">
+                            <img src="./images/closures.png" alt="Closures Memory Leak">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-ghost"></i> Zombie Event Listeners</h3>
+                        <div class="image-center">
+                            <img src="./images/zombie_event_listeners.png" alt="Zombie Event Listeners">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-infinity"></i> Never Cleared Intervals</h3>
+                        <div class="image-center">
+                            <img src="./images/never_clear_intervals.png" alt="Never Cleared Intervals">
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-cut"></i> Detached DOM Nodes</h3>
+                        <div class="image-center">
+                            <img src="./images/detached_DOM_Nodes.png" alt="Detached DOM Nodes">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-search-plus"></i> Checking Memory Usage</h3>
+                    <ol class="numbered-list">
+                        <li>Open Chrome's hamburger menu → More tools → Task Manager to see memory per tab</li>
+                        <li>Use Performance tab in DevTools with Memory profiling</li>
+                        <li>Use the Memory tab in DevTools:
+                            <ul>
+                                <li><strong>Shallow Size:</strong> How big the item is</li>
+                                <li><strong>Retained Size:</strong> How much memory frees if removed</li>
+                            </ul>
+                            Best approach: Create two snapshots and compare them
+                        </li>
+                    </ol>
+                    <div class="warning-note">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>You don't get exact access to see where memory leaks happen in your code—you have to search manually.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Assists -->
+            <section class="section-card">
+                <h2 class="section-title">
+                    <i class="fas fa-robot"></i> AI Assists in DevTools
+                </h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-comment-dots"></i> Console Error Explanations</h3>
+                        <p>Explains Chrome console errors and suggests fixes.</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3><i class="fas fa-comments"></i> Element Context Chat</h3>
+                        <p>In Elements tab, click the chat icon for AI assistance aware of your code.</p>
+                    </div>
+                </div>
+                <p class="note">These features are in beta and expanding to other DevTools areas.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Chrome DevTools Mastery Guide • Created for developers by a developer</p>
+            <p class="footer-note">All content based on Chrome DevTools documentation and best practices</p>
+        </div>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
