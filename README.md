@@ -2,6 +2,11 @@
 
 <img width="1393" height="821" alt="Screenshot 2026-01-27 202315" src="https://github.com/user-attachments/assets/f6532598-de58-41dd-aa84-07f4bf7fa21d" />
 
+## 🔗 Live Demo & Notes
+
+👉 **Explore the live demo and read the notes here:**  
+**https://homayounmmdy.github.io/chrome_dev_tool/**
+
 
 This repository documents my learnings from **Mastering Chrome Developer Tools, v4** on Frontend Masters, taught by **Jon Kuperman** (TC39 contributor and co-convener for source maps).
 
@@ -33,11 +38,11 @@ I already had hands-on experience using Chrome DevTools in daily development, bu
 
 My goals were to:
 
-✔ Move beyond `console.log()` to **systematic debugging**
-✔ Understand **how browsers load, render, and execute code**
-✔ Confidently analyze **performance bottlenecks and memory leaks**
-✔ Use DevTools as a **diagnostic and optimization toolkit**, not just an inspector
-✔ Read and act on **Lighthouse reports** with real understanding
+* Move beyond `console.log()` to **systematic debugging**
+* Understand **how browsers load, render, and execute code**
+* Confidently analyze **performance bottlenecks and memory leaks**
+* Use DevTools as a **diagnostic and optimization toolkit**, not just an inspector
+* Read and act on **Lighthouse reports** with real understanding
 
 This course significantly improved my ability to:
 
